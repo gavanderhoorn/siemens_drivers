@@ -1,0 +1,1 @@
+cmd_/home/durovsky/host_linx/driver/linux/cp16xx.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/durovsky/host_linx/driver/linux/cp16xx.ko /home/durovsky/host_linx/driver/linux/cp16xx.o /home/durovsky/host_linx/driver/linux/cp16xx.mod.o
