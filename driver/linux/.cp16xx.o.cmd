@@ -1,1 +1,0 @@
-cmd_/home/durovsky/host_linx/driver/linux/cp16xx.o := ld -m elf_x86_64   -r -o /home/durovsky/host_linx/driver/linux/cp16xx.o /home/durovsky/host_linx/driver/linux/cp16xx_linux.o /home/durovsky/host_linx/driver/linux/cp16xx_ioctl32.o 
