@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860" moduleId="org.eclipse.cdt.core.settings" name="Windows - chk x64">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="driver" buildProperties="" description="" id="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860" name="Windows - chk x64" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.596678171" name="/" resourcePath="">
+						<toolChain id="org.eclipse.cdt.msvc.toolchain.dll.debug.815229337" name="org.eclipse.cdt.msvc.toolchain.dll.debug" superClass="org.eclipse.cdt.msvc.toolchain.dll.debug">
+							<targetPlatform id="org.eclipse.cdt.msvc.targetPlatform.dll.debug.1017899238" superClass="org.eclipse.cdt.msvc.targetPlatform.dll.debug"/>
+							<builder buildPath="${ProjDirPath}/../msvc/driver" command="makebuild.bat" enableCleanBuild="false" enabledIncrementalBuild="true" id="cdt.managedbuild.builder.gnu.cross.643605379" incrementalBuildTarget="chk x64" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="cdt.managedbuild.builder.gnu.cross"/>
+							<tool id="org.eclipse.cdt.msvc.cl.dll.debug.15166272" name="C/C++ Compiler (cl)" superClass="org.eclipse.cdt.msvc.cl.dll.debug">
+								<option id="org.eclipse.cdt.msvc.cl.option.macros.1304187224" name="Defines (/D)" superClass="org.eclipse.cdt.msvc.cl.option.macros" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__KERNEL__=__KERNEL__"/>
+									<listOptionValue builtIn="false" value="CP16XX_COMBINED_DRIVER=CP16XX_COMBINED_DRIVER"/>
+									<listOptionValue builtIn="false" value="_DPR_WINDOWS=_DPR_WINDOWS"/>
+									<listOptionValue builtIn="false" value="DEBUG=DEBUG"/>
+									<listOptionValue builtIn="false" value="CP16XX_WINDRV_TRACE=CP16XX_WINDRV_TRACE"/>
+								</option>
+								<option id="org.eclipse.cdt.msvc.cl.option.includes.1573117428" name="Include Path (/I)" superClass="org.eclipse.cdt.msvc.cl.option.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\..\tools_ad_sc_ic\microsoft\winddk\6001.18001\inc\ddk&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\..\tools_ad_sc_ic\microsoft\winddk\6001.18001\inc\api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\modules\watchdog\inc&quot;"/>
+								</option>
+								<inputType id="org.eclipse.cdt.msvc.cl.inputType.1658991887" superClass="org.eclipse.cdt.msvc.cl.inputType"/>
+							</tool>
+							<tool id="org.eclipse.cdt.msvc.rc.dll.debug.221790189" name="Resource Compiler (rc)" superClass="org.eclipse.cdt.msvc.rc.dll.debug">
+								<option id="org.eclipse.cdt.msvc.rc.option.defines.313358502" name="Defines (/D)" superClass="org.eclipse.cdt.msvc.rc.option.defines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__KERNEL__=__KERNEL__"/>
+									<listOptionValue builtIn="false" value="CP16XX_COMBINED_DRIVER=CP16XX_COMBINED_DRIVER"/>
+									<listOptionValue builtIn="false" value="DPR_WINDOWS=DPR_WINDOWS"/>
+									<listOptionValue builtIn="false" value="_DPR_WINDOWS=_DPR_WINDOWS"/>
+									<listOptionValue builtIn="false" value="DEBUG=DEBUG"/>
+									<listOptionValue builtIn="false" value="CP16XX_WINDRV_TRACE=CP16XX_WINDRV_TRACE"/>
+								</option>
+								<option id="org.eclipse.cdt.msvc.rc.option.includes.1023983015" name="Include Path (/I)" superClass="org.eclipse.cdt.msvc.rc.option.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\..\tools_ad_sc_ic\microsoft\winddk\6001.18001&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\..\tools_ad_sc_ic\microsoft\winddk\6001.18001\inc\api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\modules\watchdog\inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\..\tools_ad_sc_ic\microsoft\winddk\6001.18001\inc\ddk&quot;"/>
+								</option>
+								<inputType id="org.eclipse.cdt.msvc.rc.inputType.340977214" superClass="org.eclipse.cdt.msvc.rc.inputType"/>
+							</tool>
+							<tool id="org.eclipse.cdt.msvc.link.dll.debug.531141351" name="Linker (link)" superClass="org.eclipse.cdt.msvc.link.dll.debug">
+								<inputType id="org.eclipse.cdt.msvc.link.inputType.503174178" superClass="org.eclipse.cdt.msvc.link.inputType"/>
+							</tool>
+							<tool id="org.eclipse.cdt.msvc.lib.1495730503" name="Library Manager (lib)" superClass="org.eclipse.cdt.msvc.lib"/>
+							<tool id="org.eclipse.cdt.msvc.cl.c.dll.debug.1640456333" name="C Compiler (cl)" superClass="org.eclipse.cdt.msvc.cl.c.dll.debug">
+								<option id="org.eclipse.cdt.msvc.cl.option.includes.1465092490" name="Include Path (/I)" superClass="org.eclipse.cdt.msvc.cl.option.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\..\tools_ad_sc_ic\microsoft\winddk\6001.18001\inc\ddk&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\..\tools_ad_sc_ic\microsoft\winddk\6001.18001\inc\api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\modules\watchdog\inc&quot;"/>
+								</option>
+								<option id="org.eclipse.cdt.msvc.cl.option.macros.271371225" name="Defines (/D)" superClass="org.eclipse.cdt.msvc.cl.option.macros" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__KERNEL__=__KERNEL__"/>
+									<listOptionValue builtIn="false" value="_DPR_WINDOWS=_DPR_WINDOWS"/>
+									<listOptionValue builtIn="false" value="CP16XX_COMBINED_DRIVER=CP16XX_COMBINED_DRIVER"/>
+									<listOptionValue builtIn="false" value="DEBUG=DEBUG"/>
+									<listOptionValue builtIn="false" value="CP16XX_WINDRV_TRACE=CP16XX_WINDRV_TRACE"/>
+								</option>
+								<inputType id="org.eclipse.cdt.msvc.cl.inputType.c.1587818882" superClass="org.eclipse.cdt.msvc.cl.inputType.c"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="windows/objchk_wlh_amd64|linux|vxworks" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674" moduleId="org.eclipse.cdt.core.settings" name="Windows - fre x64">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="driver" buildProperties="" description="" id="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674" name="Windows - fre x64" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674." name="/" resourcePath="">
+						<toolChain id="org.eclipse.cdt.msvc.toolchain.dll.debug.537935523" name="org.eclipse.cdt.msvc.toolchain.dll.debug" superClass="org.eclipse.cdt.msvc.toolchain.dll.debug">
+							<targetPlatform id="org.eclipse.cdt.msvc.targetPlatform.dll.debug.654825156" superClass="org.eclipse.cdt.msvc.targetPlatform.dll.debug"/>
+							<builder arguments="" buildPath="${ProjDirPath}/../msvc/driver" command="makebuild.bat" enableCleanBuild="false" enabledIncrementalBuild="true" id="cdt.managedbuild.builder.gnu.cross.2029304973" incrementalBuildTarget="fre x64" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="cdt.managedbuild.builder.gnu.cross"/>
+							<tool id="org.eclipse.cdt.msvc.cl.dll.debug.1410350422" name="C/C++ Compiler (cl)" superClass="org.eclipse.cdt.msvc.cl.dll.debug">
+								<option id="org.eclipse.cdt.msvc.cl.option.macros.585659680" name="Defines (/D)" superClass="org.eclipse.cdt.msvc.cl.option.macros" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__KERNEL__=__KERNEL__"/>
+									<listOptionValue builtIn="false" value="CP16XX_COMBINED_DRIVER=CP16XX_COMBINED_DRIVER"/>
+									<listOptionValue builtIn="false" value="_DPR_WINDOWS=_DPR_WINDOWS"/>
+								</option>
+								<option id="org.eclipse.cdt.msvc.cl.option.includes.1292306430" name="Include Path (/I)" superClass="org.eclipse.cdt.msvc.cl.option.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\..\tools_ad_sc_ic\microsoft\winddk\6001.18001\inc\ddk&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\..\tools_ad_sc_ic\microsoft\winddk\6001.18001\inc\api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\modules\watchdog\inc&quot;"/>
+								</option>
+								<inputType id="org.eclipse.cdt.msvc.cl.inputType.983046488" superClass="org.eclipse.cdt.msvc.cl.inputType"/>
+							</tool>
+							<tool id="org.eclipse.cdt.msvc.rc.dll.debug.1061146990" name="Resource Compiler (rc)" superClass="org.eclipse.cdt.msvc.rc.dll.debug">
+								<option id="org.eclipse.cdt.msvc.rc.option.defines.1958892504" name="Defines (/D)" superClass="org.eclipse.cdt.msvc.rc.option.defines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__KERNEL__=__KERNEL__"/>
+									<listOptionValue builtIn="false" value="CP16XX_COMBINED_DRIVER=CP16XX_COMBINED_DRIVER"/>
+									<listOptionValue builtIn="false" value="DPR_WINDOWS=DPR_WINDOWS"/>
+									<listOptionValue builtIn="false" value="_DPR_WINDOWS=_DPR_WINDOWS"/>
+								</option>
+								<option id="org.eclipse.cdt.msvc.rc.option.includes.784805316" name="Include Path (/I)" superClass="org.eclipse.cdt.msvc.rc.option.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\..\tools_ad_sc_ic\microsoft\winddk\6001.18001&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\..\tools_ad_sc_ic\microsoft\winddk\6001.18001\inc\api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\modules\watchdog\inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\..\tools_ad_sc_ic\microsoft\winddk\6001.18001\inc\ddk&quot;"/>
+								</option>
+								<inputType id="org.eclipse.cdt.msvc.rc.inputType.893654462" superClass="org.eclipse.cdt.msvc.rc.inputType"/>
+							</tool>
+							<tool id="org.eclipse.cdt.msvc.link.dll.debug.1646995884" name="Linker (link)" superClass="org.eclipse.cdt.msvc.link.dll.debug">
+								<inputType id="org.eclipse.cdt.msvc.link.inputType.1290993038" superClass="org.eclipse.cdt.msvc.link.inputType"/>
+							</tool>
+							<tool id="org.eclipse.cdt.msvc.lib.2048710834" name="Library Manager (lib)" superClass="org.eclipse.cdt.msvc.lib"/>
+							<tool id="org.eclipse.cdt.msvc.cl.c.dll.debug.415856045" name="C Compiler (cl)" superClass="org.eclipse.cdt.msvc.cl.c.dll.debug">
+								<option id="org.eclipse.cdt.msvc.cl.option.includes.1722355320" name="Include Path (/I)" superClass="org.eclipse.cdt.msvc.cl.option.includes" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\..\tools_ad_sc_ic\microsoft\winddk\6001.18001\inc\ddk&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\..\tools_ad_sc_ic\microsoft\winddk\6001.18001\inc\api&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\modules\watchdog\inc&quot;"/>
+								</option>
+								<option id="org.eclipse.cdt.msvc.cl.option.macros.323496947" name="Defines (/D)" superClass="org.eclipse.cdt.msvc.cl.option.macros" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__KERNEL__=__KERNEL__"/>
+									<listOptionValue builtIn="false" value="_DPR_WINDOWS=_DPR_WINDOWS"/>
+									<listOptionValue builtIn="false" value="CP16XX_COMBINED_DRIVER=CP16XX_COMBINED_DRIVER"/>
+								</option>
+								<inputType id="org.eclipse.cdt.msvc.cl.inputType.c.785421232" superClass="org.eclipse.cdt.msvc.cl.inputType.c"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="windows/objchk_wlh_amd64|linux|vxworks" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674.1449738794">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674.1449738794" moduleId="org.eclipse.cdt.core.settings" name="linux-2.6.25.6">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="driver" buildProperties="" description="" id="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674.1449738794" name="linux-2.6.25.6" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674.1449738794." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.1588783101" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.432075017" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<builder buildPath="${ProjDirPath}/../msvc/driver" enableCleanBuild="false" id="cdt.managedbuild.target.gnu.builder.base.1838588625" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.764675502" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.580570760" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.include.paths.117179172" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\modules\watchdog\inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\kernelheader\linux-2.6.25.6\include&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.642337830" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__KERNEL__=__KERNEL__"/>
+									<listOptionValue builtIn="false" value="CP16XX_COMBINED_DRIVER=CP16XX_COMBINED_DRIVER"/>
+									<listOptionValue builtIn="false" value="_DPR_LINUX=_DPR_LINUX"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.740466770" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.746777103" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option id="gnu.c.compiler.option.include.paths.1097664893" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}\..\..\..\modules\watchdog\inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\kernelheader\linux-2.6.25.6\include&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1483686164" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__KERNEL__=__KERNEL__"/>
+									<listOptionValue builtIn="false" value="CP16XX_COMBINED_DRIVER=CP16XX_COMBINED_DRIVER"/>
+									<listOptionValue builtIn="false" value="_DPR_LINUX=_DPR_LINUX"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.115386444" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.2073129619" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1793616271" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.167877414" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1166205843" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<option id="gnu.both.asm.option.include.paths.2116226492" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;D:\kernelheader\linux-2.6.25.6\include&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.296419205" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="windows|vxworks" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="driver.null.924531858" name="driver"/>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/driver"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings">
+		<doc-comment-owner id="org.eclipse.cdt.internal.ui.text.doctools.NullDocCommentOwner">
+			<path value=""/>
+		</doc-comment-owner>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674.1449738794;org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674.1449738794.;cdt.managedbuild.tool.gnu.c.compiler.base.746777103;cdt.managedbuild.tool.gnu.c.compiler.input.115386444">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860;org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.596678171;org.eclipse.cdt.msvc.cl.c.dll.debug.1640456333;org.eclipse.cdt.msvc.cl.inputType.c.1587818882">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.msw.build.clScannerInfo"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674;org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674.;org.eclipse.cdt.msvc.cl.c.dll.debug.415856045;org.eclipse.cdt.msvc.cl.inputType.c.785421232">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.msw.build.clScannerInfo"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674.1449738794;org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674.1449738794.;org.eclipse.cdt.msvc.cl.dll.debug.1322840811;org.eclipse.cdt.msvc.cl.inputType.171427121">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.msw.build.clScannerInfo"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674.1449738794;org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674.1449738794.;org.eclipse.cdt.msvc.cl.c.dll.debug.2112489055;org.eclipse.cdt.msvc.cl.inputType.c.127677885">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.msw.build.clScannerInfo"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674;org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674.;org.eclipse.cdt.msvc.cl.dll.debug.1410350422;org.eclipse.cdt.msvc.cl.inputType.983046488">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.msw.build.clScannerInfo"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674.1449738794;org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.916733674.1449738794.;cdt.managedbuild.tool.gnu.cpp.compiler.base.580570760;cdt.managedbuild.tool.gnu.cpp.compiler.input.740466770">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860;org.eclipse.cdt.msvc.toolchain.dll.debug.1914214860.596678171;org.eclipse.cdt.msvc.cl.dll.debug.15166272;org.eclipse.cdt.msvc.cl.inputType.1658991887">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.msw.build.clScannerInfo"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>
