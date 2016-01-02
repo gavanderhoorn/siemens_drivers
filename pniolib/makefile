@@ -16,14 +16,14 @@ ifeq ($(shell ls $(DEBIAN_VERSION_FILE)),$(DEBIAN_VERSION_FILE))
  	INSTALLDIRLIB =$(INSTALLDIR)/lib
 endif 
 
-INSTALLDIRINC =$(INSTALLDIR)/include
+INSTALLDIRINC =$(INSTALLDIR)/include/dk16xx
 ETC =/etc
 LD = ld
 CC =g++
 AR =ar
 
-LIB =libpniousr.so
-LIBA =libpniousr.a
+LIB =libdk16xx_pniousr.so
+LIBA =libdk16xx_pniousr.a
 LIBOBJ =iobase/lnk/iobase.lo \
     iodataupdate/lnk/iodataupdate.lo \
     kramiotlb/lnk/kramiotlb.lo \
@@ -71,7 +71,7 @@ endif
 	make -C tracelib/csd
 	make -C ../servlib
 	$(AR) rc $(LIBA) $(LIBOBJ)
-	$(CC) -shared -o $(LIB) $(LIBOBJ) -lpthread -lrt $(LDFLAGS) -L../servlib -lservusr
+	$(CC) -shared -o $(LIB) $(LIBOBJ) -lpthread -lrt $(LDFLAGS) -L../servlib -ldk16xx_servusr
 
 clean:
 	make -C iobase/csd clean
@@ -81,23 +81,26 @@ clean:
 	rm -f $(LIB) $(LIBA)
 
 deinstall:
-	rm -f $(INSTALLDIRLIB)/$(LIB) \
-	      $(INSTALLDIRLIB)/$(LIBA)
-	rm -f $(INSTALLDIRINC)/pniobase.h \
-	      $(INSTALLDIRINC)/pniousrd.h \
-	      $(INSTALLDIRINC)/pniousrx.h \
-	      $(INSTALLDIRINC)/pniousrt.h \
-	      $(INSTALLDIRINC)/pnioerrx.h
+	rm -f $(DESTDIR)$(INSTALLDIRLIB)/$(LIB) \
+	      $(DESTDIR)$(INSTALLDIRLIB)/$(LIBA)
+	rm -f $(DESTDIR)$(INSTALLDIRINC)/pniobase.h \
+	      $(DESTDIR)$(INSTALLDIRINC)/pniousrd.h \
+	      $(DESTDIR)$(INSTALLDIRINC)/pniousrx.h \
+	      $(DESTDIR)$(INSTALLDIRINC)/pniousrt.h \
+	      $(DESTDIR)$(INSTALLDIRINC)/pnioerrx.h
 
 install: all
-	cp -p $(LIB) $(INSTALLDIRLIB)/
-	cp -p $(LIBA) $(INSTALLDIRLIB)/
-	cp -p iobase/inc/pniousrt.h $(INSTALLDIRINC)/
-	cp -p iobase/inc/pniousrx.h $(INSTALLDIRINC)/
-	cp -p iobase/inc/pniousrd.h $(INSTALLDIRINC)/
-	cp -p iobase/inc/pnioerrx.h $(INSTALLDIRINC)/
-	cp -p iobase/inc/pniobase.h $(INSTALLDIRINC)/
-	cp -p tracelib/inc/pniotrace.conf $(ETC)/
+	install -d $(DESTDIR)$(INSTALLDIRLIB)
+	install -d $(DESTDIR)$(INSTALLDIRINC)
+	install -d $(DESTDIR)$(ETC)
+	cp -p $(LIB) $(DESTDIR)$(INSTALLDIRLIB)/
+	cp -p $(LIBA) $(DESTDIR)$(INSTALLDIRLIB)/
+	cp -p iobase/inc/pniousrt.h $(DESTDIR)$(INSTALLDIRINC)/
+	cp -p iobase/inc/pniousrx.h $(DESTDIR)$(INSTALLDIRINC)/
+	cp -p iobase/inc/pniousrd.h $(DESTDIR)$(INSTALLDIRINC)/
+	cp -p iobase/inc/pnioerrx.h $(DESTDIR)$(INSTALLDIRINC)/
+	cp -p iobase/inc/pniobase.h $(DESTDIR)$(INSTALLDIRINC)/
+	cp -p tracelib/inc/pniotrace.conf $(DESTDIR)$(ETC)/
 
 lint:
 	make -C iobase/csd lint

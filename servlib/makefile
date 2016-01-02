@@ -17,14 +17,14 @@ ifeq ($(shell ls $(DEBIAN_VERSION_FILE)),$(DEBIAN_VERSION_FILE))
  	INSTALLDIRLIB =$(INSTALLDIR)/lib
 endif 
 
-INSTALLDIRINC =$(INSTALLDIR)/include
+INSTALLDIRINC =$(INSTALLDIR)/include/dk16xx
 ETC =/etc
 LD = ld
 CC =g++
 AR =ar
 
-LIB =libservusr.so
-LIBA =libservusr.a
+LIB =libdk16xx_servusr.so
+LIBA =libdk16xx_servusr.a
 LIBOBJ = lnk/serv.lo \
 	 ../pniolib/tracelib/lnk/tracelib.lo
 
@@ -40,17 +40,20 @@ clean:
 	rm -f $(LIB) $(LIBA)
 
 install: all
-	cp -p $(LIB) $(INSTALLDIRLIB)/
-	cp -p $(LIBA) $(INSTALLDIRLIB)/
-	cp -p inc/servusrx.h $(INSTALLDIRINC)/
-	cp -p ../pniolib/iobase/inc/pniobase.h $(INSTALLDIRINC)/
-	cp -p ../pniolib/iobase/inc/pnioerrx.h $(INSTALLDIRINC)/
-	cp -p ../pniolib/tracelib/inc/servtrace.conf $(ETC)/
+	install -d $(DESTDIR)$(INSTALLDIRLIB)
+	install -d $(DESTDIR)$(INSTALLDIRINC)
+	install -d $(DESTDIR)$(ETC)
+	cp -p $(LIB) $(DESTDIR)$(INSTALLDIRLIB)/
+	cp -p $(LIBA) $(DESTDIR)$(INSTALLDIRLIB)/
+	cp -p inc/servusrx.h $(DESTDIR)$(INSTALLDIRINC)/
+	cp -p ../pniolib/iobase/inc/pniobase.h $(DESTDIR)$(INSTALLDIRINC)/
+	cp -p ../pniolib/iobase/inc/pnioerrx.h $(DESTDIR)$(INSTALLDIRINC)/
+	cp -p ../pniolib/tracelib/inc/servtrace.conf $(DESTDIR)$(ETC)/
 
 deinstall:
-	rm -f $(INSTALLDIRLIB)/$(LIB) \
-	      $(INSTALLDIRLIB)/$(LIBA)
-	rm -f $(INSTALLDIRINC)/servusrx.h
+	rm -f $(DESTDIR)$(INSTALLDIRLIB)/$(LIB) \
+	      $(DESTDIR)$(INSTALLDIRLIB)/$(LIBA)
+	rm -f $(DESTDIR)$(INSTALLDIRINC)/servusrx.h
 
 lint:
 	make -C csd lint

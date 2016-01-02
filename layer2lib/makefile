@@ -1,13 +1,13 @@
 INSTALLDIR =/usr
 INSTALLDIRLIB =$(INSTALLDIR)/lib
-INSTALLDIRINC =$(INSTALLDIR)/include
+INSTALLDIRINC =$(INSTALLDIR)/include/dk16xx
 ETC =/etc
 LD = ld
 CC =g++
 AR =ar
 
-LIB =libl2interface.so
-LIBA =libl2interface.a
+LIB =libdk16xx_l2interface.so
+LIBA =libdk16xx_l2interface.a
 LIBOBJ = lnk/l2interface.lo \
 	 ../pniolib/tracelib/lnk/tracelib.lo \
 	 ../servlib/lnk/serv.lo
@@ -25,22 +25,25 @@ clean:
 	rm -f $(LIB) $(LIBA)
 
 install: all
-	cp -p $(LIB) $(INSTALLDIRLIB)/
-	cp -p $(LIBA) $(INSTALLDIRLIB)/
-	cp -p inc/l2eth_defs.h $(INSTALLDIRINC)/
-	cp -p inc/l2eth_user.h $(INSTALLDIRINC)/
-	cp -p inc/l2eth_errs.h $(INSTALLDIRINC)/
-	cp -p inc/l2eth_config.h $(INSTALLDIRINC)/
-	cp -p inc/l2eth_trace.conf $(ETC)/
+	install -d $(DESTDIR)$(INSTALLDIRLIB)
+	install -d $(DESTDIR)$(INSTALLDIRINC)
+	install -d $(DESTDIR)$(ETC)
+	cp -p $(LIB) $(DESTDIR)$(INSTALLDIRLIB)/
+	cp -p $(LIBA) $(DESTDIR)$(INSTALLDIRLIB)/
+	cp -p inc/l2eth_defs.h $(DESTDIR)$(INSTALLDIRINC)/
+	cp -p inc/l2eth_user.h $(DESTDIR)$(INSTALLDIRINC)/
+	cp -p inc/l2eth_errs.h $(DESTDIR)$(INSTALLDIRINC)/
+	cp -p inc/l2eth_config.h $(DESTDIR)$(INSTALLDIRINC)/
+	cp -p inc/l2eth_trace.conf $(DESTDIR)$(ETC)/
 
 deinstall:
-	rm -f $(INSTALLDIRLIB)/$(LIB) \
-	      $(INSTALLDIRLIB)/$(LIBA)
-	rm -f $(INSTALLDIRINC)/l2eth_defs.h
-	rm -f $(INSTALLDIRINC)/l2eth_user.h
-	rm -f $(INSTALLDIRINC)/l2eth_errs.h
-	rm -f $(INSTALLDIRINC)/l2eth_config.h
-	rm -f $(ETC)/l2eth_trace.conf
+	rm -f $(DESTDIR)$(INSTALLDIRLIB)/$(LIB) \
+	      $(DESTDIR)$(INSTALLDIRLIB)/$(LIBA)
+	rm -f $(DESTDIR)$(INSTALLDIRINC)/l2eth_defs.h
+	rm -f $(DESTDIR)$(INSTALLDIRINC)/l2eth_user.h
+	rm -f $(DESTDIR)$(INSTALLDIRINC)/l2eth_errs.h
+	rm -f $(DESTDIR)$(INSTALLDIRINC)/l2eth_config.h
+	rm -f $(DESTDIR)$(ETC)/l2eth_trace.conf
 
 lint:
 	make -C csd lint
