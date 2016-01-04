@@ -1,0 +1,14 @@
+<package>
+  <name>siemens_drivers</name>
+  <version>2.6.2</version>
+  <description>
+    <p>
+      Siemens DK-16xx PN IO for the ROS-Industrial CP 1616 driver packages</p>
+    <p>
+      Catkinised version of the Siemens DK-16xx PN IO Development Kit.
+    </p>
+  </description>
+  <license>BSD</license>
+  <maintainer email="a@a.aa">Frantisek Durovsky</maintainer>
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
